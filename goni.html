@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SharpSight Vision Center</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f9fc;
+      color: #172b3a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0066cc, #00a6a6);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 70px 20px;
+      text-align: center;
+      background:
+        linear-gradient(rgba(0, 102, 204, 0.75), rgba(0, 166, 166, 0.75)),
+        url("https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 25px;
+      background: white;
+      color: #0066cc;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 55px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #0066cc;
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      color: #0066cc;
+      margin-bottom: 10px;
+    }
+
+    .icon {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: #e8f6f8;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 17px;
+    }
+
+    .contact a {
+      color: #0066cc;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 30px auto 0;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 14px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    textarea {
+      height: 130px;
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background: #0066cc;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #004c99;
+    }
+
+    footer {
+      background: #172b3a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+    }
+
+    .emergency {
+      background: #fff3cd;
+      color: #664d03;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">👁️SharpSight Vision Center</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="emergency">
+    For serious or sudden vision problems, seek urgent medical attention.
+  </div>
+
+  <section class="hero" id="home">
+    <h1>Professional Eye Care</h1>
+
+    <p>
+      Quality ophthalmology services focused on protecting,
+      improving, and maintaining healthy vision.
+    </p>
+
+    <a href="#contact" class="btn">Book an Appointment</a>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Our Eye Care Service</h2>
+
+    <div class="about">
+      <p>
+        We provide professional eye examinations, diagnosis,
+        treatment, and management of different eye conditions.
+        Our goal is to help patients maintain healthy eyes
+        and achieve the best possible vision.
+      </p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+
+      <div class="service-card">
+        <div class="icon">👁️</div>
+        <h3>Eye Disease Care</h3>
+        <p>
+          Diagnosis, treatment, and management of common
+          eye diseases and conditions.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">👓</div>
+        <h3>Correction of Refractive Errors</h3>
+        <p>
+          Assessment and correction of short-sightedness,
+          long-sightedness, and astigmatism using appropriate
+          vision-correction options.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🔍</div>
+        <h3>Comprehensive Eye Examination</h3>
+        <p>
+          Detailed eye examinations to assess vision
+          and identify possible eye problems.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🩺</div>
+        <h3>Eye Disease Diagnosis</h3>
+        <p>
+          Evaluation of symptoms and examination of the eyes
+          to help identify eye conditions.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">💧</div>
+        <h3>Glaucoma Care</h3>
+        <p>
+          Screening, monitoring, and management of glaucoma
+          and related eye pressure problems.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🌟</div>
+        <h3>Cataract Care</h3>
+        <p>
+          Assessment and management of cataracts and
+          appropriate treatment options.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">👶</div>
+        <h3>Children's Eye Care</h3>
+        <p>
+          Eye examinations and care for children's
+          vision and eye health.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">📋</div>
+        <h3>Follow-Up Care</h3>
+        <p>
+          Regular follow-up appointments to monitor
+          eye health and treatment progress.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="contact">
+
+      <p>
+        📞 Phone:
+        <a href="tel:"+234 7036671469">
+           +2347036671469
+        </a>
+      </p>
+
+      <p>
+        📧 Email:goni
+        <a href="mailto:goniijauro@gmail.com">
+          goniijauro@gmail.com
+        </a>
+      </p>
+
+      <p>
+        📍 Address:
+        Daurawa sani lawan street kano 239
+      </p>
+
+      <form onsubmit="sendMessage(event)">
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Your Name"
+          required
+        >
+
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Your Phone Number"
+          required
+        >
+
+        <textarea
+          id="message"
+          placeholder="How can we help you?"
+          required
+        ></textarea>
+
+        <button type="submit">
+          Send Appointment Request
+        </button>
+
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Clear Vision Eye Care</p>
+    <p>Professional Eye Care • Better Vision • Healthy Eyes</p>
+  </footer>
+
+  <script>
+    function sendMessage(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const message = document.getElementById("message").value;
+
+      alert(
+        "Thank you, " + name +
+        "! Your appointment request has been received."
+      );
+
+      console.log("Name:", name);
+      console.log("Phone:", phone);
+      console.log("Message:", message);
+    }
+  </script>
+
+</body>
+</html>
